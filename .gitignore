@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/.env
+server/vendor
+server/.env
+server/storage/*.key
+server/storage/logs/*
+!server/storage/logs/.gitkeep
+server/database/*.sqlite
