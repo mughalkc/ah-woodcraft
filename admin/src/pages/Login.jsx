@@ -28,7 +28,7 @@ export default function Login({ onLogin }) {
     <div className="flex min-h-screen items-center justify-center p-5">
       <form onSubmit={submit} className="w-full max-w-md rounded-3xl border border-stone-200 bg-white p-8 shadow-xl">
         <div className="mb-8">
-          <div className="text-2xl font-black">AH <span className="text-amber-800">WOODCRAFT</span></div>
+          <div className="text-2xl font-black">AR <span className="text-amber-800">WOODCRAFT</span></div>
           <p className="mt-2 text-sm text-stone-500">Admin sign in</p>
         </div>
         {error && <div className="mb-4 rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</div>}
