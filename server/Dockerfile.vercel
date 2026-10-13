@@ -23,7 +23,8 @@ RUN mkdir -p \
         storage/framework/sessions \
         storage/framework/views \
         bootstrap/cache \
-    && composer dump-autoload --no-dev --classmap-authoritative
+        && composer dump-autoload --no-dev --classmap-authoritative --no-scripts \
+    && (php -d display_errors=1 -d display_startup_errors=1 artisan package:discover -vvv || echo "WARNING: package:discover failed")
 
 FROM base AS runtime
 
